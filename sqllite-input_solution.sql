@@ -67,7 +67,7 @@ FROM orders_unique --not showing duplicates
 SELECT DISTINCT item
 FROM orders
 WHERE item LIKE '%ea%' --contain ea
-   OR item LIKE 'Key%'; --stat with Key
+   OR item LIKE 'Key%'; --start with Key
 ;
 
 --TASK 6--
