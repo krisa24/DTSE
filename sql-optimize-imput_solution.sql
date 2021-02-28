@@ -27,7 +27,7 @@ LEFT JOIN "DTAG_DEV_CSBI_CELONIS_WORK"."dtag.dev.csbi.celonis.app.p2p_elog::__P2
     AND RSEG.ZSYSNAME = EKPO.SOURCE_SYSTEM
     AND RSEG.MANDT = EKPO.MANDT
     AND RSEG.EBELN || RSEG.EBELP = EKPO.EBELN || EKPO.EBELP 
---from naming it seems like the columns can be joined without concatanations
+--from naming it seems like the columns can be joined without concatenations
 --RSEG.EBELN = EKPO.EBELN AND RSEG.EBELP || EKPO.EBELP 
 INNER JOIN "DTAG_DEV_CSBI_CELONIS_DATA"."dtag.dev.csbi.celonis.data.elog::V_BKPF" AS BKPF ON 1=1
     AND BKPF.AWKEY = RSEG.AWKEY
